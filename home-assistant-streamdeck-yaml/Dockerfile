@@ -4,7 +4,7 @@ FROM python:3.12-alpine3.17 as python-build
 
 # Stream Deck dependencies
 # Install dependencies
-RUN apk --no-cache add \
+RUN apk add \
     # Stream Deck dependencies
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
