@@ -27,6 +27,7 @@ RUN apk --no-cache add \
     python3-dev=3.10.15-r0 \
     musl-dev=1.2.3-r6
 
+RUN apk add --upgrade libcrypto3 libssl3
 
 # Download and unzip the repository
 ARG VERSION=2024.7.5
