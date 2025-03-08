@@ -9,6 +9,7 @@ RUN apk add \
     libssl3=3.0.15-r1 \
     libcrypto3=3.0.15-r1 \
     openssl=3.0.15-r1 \
+    libcurl=8.9.0-r0 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
     hidapi-dev=0.12.0-r1 \
