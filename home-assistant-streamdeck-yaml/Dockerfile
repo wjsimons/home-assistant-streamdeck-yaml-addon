@@ -6,6 +6,8 @@ FROM python:3.12-alpine3.17 as python-build
 # Install dependencies
 RUN apk add \
     # Stream Deck dependencies
+    libssl3=3.0.15-r1 \
+    libcrypto3=3.0.15-r1 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
     hidapi-dev=0.12.0-r1 \
@@ -26,8 +28,6 @@ RUN apk add \
     gcc=12.2.1_git20220924-r4 \
     python3-dev=3.10.15-r0 \
     musl-dev=1.2.3-r6
-
-RUN apk upgrade
 
 # Download and unzip the repository
 ARG VERSION=2024.7.5
