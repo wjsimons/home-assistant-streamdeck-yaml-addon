@@ -1,6 +1,6 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/base:17.2.1
 
-FROM python:3.12-alpine3.17 as python-build
+FROM python:3.12-alpine3.17.1 as python-build
 
 # Stream Deck dependencies
 # Install dependencies
@@ -27,7 +27,6 @@ RUN apk --no-cache add \
     python3-dev=3.10.15-r0 \
     musl-dev=1.2.3-r6
 
-RUN apk upgrade --no-cache libssl3 libcrypto3
 
 # Download and unzip the repository
 ARG VERSION=2024.7.5
