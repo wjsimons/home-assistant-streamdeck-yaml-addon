@@ -6,6 +6,7 @@ FROM python:3.12-alpine3.17 as python-build
 # Install dependencies
 RUN apk --no-cache add \
     # Stream Deck dependencies
+    openssl=3.0.15-r1 \
     libcurl=8.9.0-r0 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
