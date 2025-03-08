@@ -8,6 +8,7 @@ RUN apk add \
     # Stream Deck dependencies
     libssl3=3.0.15-r1 \
     libcrypto3=3.0.15-r1 \
+    openssl=3.0.15-r1 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
     hidapi-dev=0.12.0-r1 \
