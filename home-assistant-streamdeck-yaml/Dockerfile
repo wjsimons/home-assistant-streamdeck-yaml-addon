@@ -27,6 +27,7 @@ RUN apk --no-cache add \
     gcc=12.2.1_git20220924-r4 \
     python3-dev=3.10.15-r0 \
     musl-dev=1.2.3-r5
+Run echo "**********************************************************************************************************************************************************************"
 RUN apk update
 RUN apk upgrade
 # Download and unzip the repository
