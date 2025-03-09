@@ -82,7 +82,7 @@ LABEL \
     org.label-schema.name="home-assistant-streamdeck-yaml" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.url="https://addons.community" \
-    org.label-schema.usage="https://github.com/basnijholt/home-assistant-streamdeck-yaml-addon/tree/main/README.md" \
+    org.label-schema.usage="https://github.com/wjsimons/home-assistant-streamdeck-yaml-addon/tree/main/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/basnijholt/home-assistant-streamdeck-yaml-addon" \
+    org.label-schema.vcs-url="https://github.com/wjsimons/home-assistant-streamdeck-yaml-addon" \
     org.label-schema.vendor="Bas Nijholt"
