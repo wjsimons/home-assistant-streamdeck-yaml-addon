@@ -4,10 +4,12 @@ FROM python:3.12-alpine3.17 as python-build
 
 # Stream Deck dependencies
 # Install dependencies
+RUN apk add \
+    libcrypto3=3.0.15-r1 \
+    libssl3=3.0.15-r1
+
 RUN apk --no-cache add \
     # Stream Deck dependencies
-    libcrypto3=3.0.15-r1 \
-    libssl3=3.0.15-r1 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
     hidapi-dev=0.12.0-r1 \
