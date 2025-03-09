@@ -9,7 +9,7 @@ RUN apk --no-cache add \
     ca-certificates=20240226-r0 \
     brotli-libs=1.0.9-r9 \
     musl=1.2.3-r6 \
-    libcrypto=3.0.15-r1 \
+    libcrypto3=3.0.15-r1 \
     nghttp2-libs=1.51.0-r2 \
     libssl3=3.0.15-r1 \
     zlib=1.2.13-r0 \
