@@ -6,7 +6,13 @@ FROM python:3.12-alpine3.17 as python-build
 # Install dependencies
 RUN apk --no-cache add \
     # Stream Deck dependencies
+    ca-certificates=20240226-r0 \
+    brotli-libs=1.0.9-r9 \
+    musl=1.2.3-r6 \
+    libcrypto=3.0.15-r1 \
+    nghttp2-libs=1.51.0-r2 \
     libssl3=3.0.15-r1 \
+    zlib=1.2.13-r0 \
     libusb=1.0.26-r0 \
     libusb-dev=1.0.26-r0 \
     hidapi-dev=0.12.0-r1 \
@@ -27,9 +33,7 @@ RUN apk --no-cache add \
     gcc=12.2.1_git20220924-r4 \
     python3-dev=3.10.15-r0 \
     musl-dev=1.2.3-r5
-Run echo "**********************************************************************************************************************************************************************"
-RUN apk update
-RUN apk upgrade
+
 # Download and unzip the repository
 ARG VERSION=2024.7.5
 # hadolint ignore=SC2034
